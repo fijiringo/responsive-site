@@ -20,37 +20,36 @@ body {
 
 /* Layout
 ------------------------------------------------------------*/
-.block-center, #contents {
-  display: block;
-  width: 100%;
-  height: auto; }
-
 /* picture
 ------------------------------------------------------------*/
 #picture {
-  hight: 250px; }
+  height: 250px;
+  background-image: url("./images/neko.jpg");
+  background-size: cover; }
 
 /* contents
 ------------------------------------------------------------*/
-#contents h2 {
-  font-size: 2.2rem; }
-#contents .container {
-  margin: 10px;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
-  #contents .container .box {
-    -webkit-flex: 1;
-    flex: 1;
-    background-color: #9a9a9a;
-    margin-bottom: 10px; }
-  #contents .container h2 {
-    font-size: 1.8rem;
-    background-color: #dcdcdc; }
-  #contents .container p {
-    color: #fefefe; }
+#contents {
+  width: 100%; }
+  #contents h2 {
+    font-size: 2.2rem; }
+  #contents .container {
+    margin: 10px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    #contents .container .box {
+      -webkit-flex: 1;
+      flex: 1;
+      background-color: #9a9a9a;
+      margin-bottom: 10px; }
+    #contents .container h2 {
+      font-size: 1.8rem;
+      background-color: #dcdcdc; }
+    #contents .container p {
+      color: #fefefe; }
 
 /* footer
 ------------------------------------------------------------*/
@@ -61,12 +60,13 @@ body {
   #button h3 {
     margin: 0 auto;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+     }
   #button .button-box {
     width: 250px;
-    hight: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 30px;
+    padding-top: 10px;
+    
     background-color: #9a9a9a;
     color: #fefefe;
     -moz-border-radius: 4px;
@@ -77,12 +77,12 @@ body {
 
 @media (min-width: 769px) {
   #picture {
-    hight: 500px; }
+    height: 500px; }
 
   #contents .container {
     -webkit-flex-direction: row;
     flex-direction: row;
-    hight: 500px; }
+     }
   #contents .box {
     -webkit-flex: 1;
     flex: 1;
